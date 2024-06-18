@@ -103,10 +103,9 @@ if __name__ == "__main__":
     data.pop("", None)
     print('finished reading data..... \n Starting mining .....')
     t1=time.time()
-    # start = show_info('开始')
+
     eclat([], sorted(data.items(), key=lambda item: len(item[1]), reverse=True), dict_id, cnt)
-    # end = show_info('结束')
-    # print('此程序运行占内存' + str(end - start) + ' KB')
+
     t2=time.time()
     print(t2-t1)
     print('found %d Frequent items' % len(FreqItems))

@@ -225,10 +225,7 @@ if __name__ == "__main__":
     confidence=70      #输入% 百分制
     dataset, data, trans = Read_Data('D:\综述实验2\关联规则\模块2/data12w离散化.csv')
     t1=time.time()
-    # start = show_info('开始')
     L=M_Apriori(dataset, data, minsup,trans)
-    # end = show_info('结束')
-    # print('此程序运行占内存' + str(end - start) + ' KB')
     t2=time.time()
     print(t2-t1)
     # generateRules(L,confidence,dataset)
